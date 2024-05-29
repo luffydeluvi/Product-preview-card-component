@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+--dark-cyan: hsl(158, 36%, 37%);
+--darkcyan: hsl(159, 91%, 9%);
+--cream: hsl(30, 38%, 92%);
+--very-dark-blue: hsl(212, 21%, 14%);
+--dark-grayish-blue: hsl(228, 12%, 48%);
+--white: hsl(0, 0%, 100%);
+--font: 14px;
+--mobile: 375px;
+--desktop: 1440px;
+--montserrat: 'Montserrat', sans-serif;
+--fraunces: 'Fraunces', serif,
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    background-color: var(--cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 600px;
+    height: 447px;
+    background-color: var(--white);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+}
+
+.card-image img {
+    width: 297px;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-details {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin-right: 28px;
+    height: auto;
+}
+
+.card-details h3 {
+    color: var(--dark-grayish-blue);
+    font-family: var(--montserrat);
+    font-weight: 500;
+    letter-spacing: 5px;
+    font-size: 12px;
+}
+
+.card-details h1 {
+    color: var(--very-dark-blue);
+    font-family: var(--fraunces);
+}
+
+.card-details p {
+    color: var(--dark-grayish-blue);
+    font-family: var(--montserrat);
+    font-size: var(--font);
+    font-weight: 500;
+}
+
+.card-details .currency {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-details .currency h1 {
+    color: var(--dark-cyan);
+}
+
+.card-details .currency small {
+    text-decoration: line-through;
+    color: var(--dark-grayish-blue);
+}
+
+.card-details .cart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-cyan);
+    width: 100%;
+    height: 47px;
+    border-radius: 10px;
+    padding: 1rem;
+    gap: 10px;
+    color: var(--white);
+    cursor: pointer;
+    transform: all .2s ease-in-out;
+}
+
+.card-details .cart p {
+    color: var(--white);
+}
+
+.card-details .cart:hove{
+    background-color: var(--dark-cyan);
+}
